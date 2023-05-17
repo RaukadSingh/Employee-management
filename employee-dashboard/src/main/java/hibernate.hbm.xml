@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+ 
+<hibernate-mapping> 
+  <class name="com.cetpa.Employee">
+   <id name="eid">
+    <generator class="increment" />
+   </id>
+   <property name="firstname" length="30" />
+   <property name="lastname" length="30" />
+   <property name="department" length="40" />
+   <property name="email" length="50" />
+   <property name="phone" length="20" />
+   <property name="salary" />
+  </class>	   
+</hibernate-mapping>  
